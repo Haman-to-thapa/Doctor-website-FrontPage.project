@@ -1,8 +1,8 @@
-/*************  ✨ Codeium Command 🌟  *************/
+
 import React, { useContext, useEffect, useState } from 'react'
 import { useNavigate, useParams } from 'react-router-dom'
 import { AppContext } from '../context/AppContext'
-import { assets } from '../assets/assets'
+import { doctors, assets } from '../assets/assets'
 import RelatedDoctors from './RelatedDoctors'
 import { toast } from 'react-toastify'
 import axios from 'axios'
@@ -11,7 +11,9 @@ const Appointment = () => {
 
 
   const { docId } = useParams()
-  const { doctors, currentSymbol, getDoctorsData, token, bakendUrl } = useContext(AppContext)
+  // const { doctors, currentSymbol, getDoctorsData, token, bakendUrl } = useContext(AppContext)
+
+
   const daysOfWeak = ['SUN', 'MON', 'TUE', 'WED', 'THU', 'FRI', 'SAT']
 
   const [docInfo, setDocInfo] = useState(null)
@@ -144,7 +146,7 @@ const Appointment = () => {
             </p>
           </div>
           <p className='font-medium mt-3'>
-            Appointment fee: <span> {currentSymbol}{docInfo.fees}</span>
+            Appointment fee: <span> {docInfo.fees}</span>
           </p>
         </div>
       </div>

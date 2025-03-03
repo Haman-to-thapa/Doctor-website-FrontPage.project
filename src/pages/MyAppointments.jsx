@@ -1,12 +1,8 @@
 import React, { useContext } from 'react'
-import { AppContext } from '../context/AppContext'
-import axios from 'axios'
-import { toast } from 'react-toastify'
-// import { toast } from 'react-toastify'
-// import axios from 'axios'
+import { doctors } from '../assets/assets'
+
 
 const MyAppointments = () => {
-  const { doctors } = useContext(AppContext)
 
 
   // const months = [" ", "jan", "feb", "mar", "apr", "may", "jan", "jul", "aug", "sep", "oct", "nov", "dec"]
