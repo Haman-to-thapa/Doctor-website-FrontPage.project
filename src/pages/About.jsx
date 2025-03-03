@@ -8,7 +8,7 @@ const About = () => {
         <p>ABOUT <span>US</span></p>
       </div>
 
-      <div className='my-10 flex flex-col md:flex-row gap-12'>
+      <div className='my-10 flex flex-col md:flex-row gap-12 object-cover'>
         <img src={assets.about_image} className="w-full md:max-w-[360px] " />
         <div className='flex flex-col justify-center gap-6 md:w-2/4 text-sm font-normal'>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam quas recusandae saepe soluta, libero laborum non placeat, quod animi repellendus assumenda. Molestiae tenetur molestias dolore? Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis qui commodi quo veritatis quaerat eaque reprehenderit repellendus praesentium fugiat. Quod fuga deleniti consectetur quidem alias sequi distinctio nemo inventore provident.</p>
